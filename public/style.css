@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input {
+    margin-left: 0.5rem;
+  }
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DFR Get Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>DFR: Fetch Item</h1>
+  <form id="get-item-form">
+    <label>
+      Item Number:
+      <input type="text" id="item-number" required>
+    </label>
+    <label>
+      Revision:
+      <input type="text" id="revision" value="A">
+    </label>
+    <label>
+      Qualifier:
+      <input type="text" id="qualifier" value="Part.0">
+    </label>
+    <button type="submit">Fetch</button>
+  </form>
+  <pre id="result"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
