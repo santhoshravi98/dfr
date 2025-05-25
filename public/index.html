@@ -2,30 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>DFR Get Item</title>
+  <title>Teamcenter Item Fetcher</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>DFR: Fetch Item</h1>
-  <form id="get-item-form">
+
+  <h1>Teamcenter Item Fetcher</h1>
+
+  <form id="fetch-form">
     <label>
       Item Number:
       <input type="text" id="item-number" required>
     </label>
+
     <label>
       Revision:
-      <input type="text" id="revision" value="A">
+      <input type="text" id="revision" required>
     </label>
+
     <label>
       Qualifier:
-      <input type="text" id="qualifier" value="Part.0">
+      <input type="text" id="qualifier" required>
     </label>
-    <button type="submit">Fetch</button>
+
+    <button type="submit">Fetch Item</button>
   </form>
-  <pre id="result"></pre>
+
+  <h3>Category to Export</h3>
+  <label>
+    Category:
+    <select id="category-select">
+      <option value="">--Select Category--</option>
+    </select>
+  </label>
+  <button id="export-btn">Export</button>
+
+  <h3>API Result</h3>
+  <pre id="result">Awaiting data...</pre>
+
   <script src="script.js"></script>
 </body>
 </html>
-
-
